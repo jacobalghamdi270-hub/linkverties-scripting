@@ -1,0 +1,58 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Linkverties Hub | #1 Scripting</title>
+    <style>
+        body { background-color: #0d1117; color: #58a6ff; font-family: sans-serif; text-align: center; padding: 20px; }
+        .container { max-width: 700px; margin: auto; background: #161b22; padding: 30px; border-radius: 15px; border: 1px solid #30363d; }
+        h1 { color: #238636; text-shadow: 0 0 10px #238636; }
+        .box { background: #0d1117; border: 1px solid #30363d; padding: 15px; border-radius: 10px; margin: 15px 0; text-align: left; }
+        .btn { background: #238636; color: white; border: none; padding: 10px 20px; border-radius: 5px; cursor: pointer; font-weight: bold; width: 100%; }
+        .btn:hover { background: #2ea043; box-shadow: 0 0 15px #2ea043; }
+        .secret-btn { background: #8957e5; }
+        .panic-btn { background: #f85149; margin-bottom: 20px; }
+    </style>
+</head>
+<body>
+
+    <button class="btn panic-btn" onclick="location.href='https://google.com'">⚠️ PANIC: HIDE SITE (TEACHER MODE)</button>
+
+    <div class="container">
+        <h1>🚀 LinkvertiesScripting</h1>
+        <p><strong>18+ ONLY | 🛡️ 100% NO VIRUSES</strong></p>
+
+        <div class="box">
+            <h3>🎮 Delta / Roblox Pack</h3>
+            <button class="btn" onclick="copyScript('print(\'Delta Loaded!\')')">COPY DELTA SCRIPT</button>
+        </div>
+
+        <div class="box">
+            <h3>🛡️ Force-Allow Download</h3>
+            <button class="btn" onclick="copyScript('/* Force Allow Bypass */')">COPY BYPASS CODE</button>
+        </div>
+
+        <div class="box">
+            <h3>🔒 Secret Admin Vault</h3>
+            <button class="btn secret-btn" onclick="openVault()">ENTER PASSWORD</button>
+        </div>
+    </div>
+
+<script>
+function copyScript(text) {
+    navigator.clipboard.writeText(text);
+    alert("Script Copied! Paste into Delta or Console.");
+}
+
+function openVault() {
+    var pw = prompt("Enter Password:");
+    if (pw === "delta123") {
+        alert("Access Granted!");
+        window.location.href = "https://github.com";
+    } else {
+        alert("Wrong Password!");
+    }
+}
+</script>
+</body>
+</html>
